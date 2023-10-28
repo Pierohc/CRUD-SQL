@@ -1,3 +1,7 @@
+insert into usuarios (idUsuario,idRol,idEstado,nombres,apellidos,codigo,correo_pucp,contrasena,fecha_creacion,ultimo_login,cant_eventos_inscritos,motivo_rechazo) 
+values ('108', 'GRADUAT', 'ACC', 'Juan', 'Huaman', '20200108', 'a20200108@pucp.edu.pe', '108', now(), NULL, '0', NULL)
+
+
 ![image](https://github.com/Pierohc/CRUD-SQL/assets/133154904/ce0015bd-159d-4d3c-b2d1-e442802da079)
 
 ---------------------
