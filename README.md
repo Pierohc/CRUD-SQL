@@ -2,6 +2,17 @@ insert into usuarios (idUsuario,idRol,idEstado,nombres,apellidos,codigo,correo_p
 values ('108', 'GRADUAT', 'ACC', 'Juan', 'Huaman', '20200108', 'a20200108@pucp.edu.pe', '108', now(), NULL, '0', NULL)
 
 
+use proyectoweb;
+
+ALTER TABLE usuarios
+add column idRolAcademico VARCHAR(15);
+
+ALTER TABLE usuarios
+ADD CONSTRAINT `fk_rol_academico` FOREIGN KEY (`idRolAcademico`) // agregar una columna idRolAcademico que ser FK
+REFERENCES `proyectoweb`.`rol_academico` (`idRolAcademico`) // La relacionara sacandola de la tabla rol_academico seleccionando la columna idRolAcademico de esa tabla
+    
+
+
 ![image](https://github.com/Pierohc/CRUD-SQL/assets/133154904/ce0015bd-159d-4d3c-b2d1-e442802da079)
 
 ---------------------
